@@ -19,8 +19,8 @@ var people = []person{
 }
 
 func main() {
-	i := search()
-	if i != -1 {
+	var i int = search()
+	if i >= 0 {
 		fmt.Println("Name :", people[i].name)
 		fmt.Println("Gender :", people[i].gender)
 		fmt.Println("Age :", people[i].age)
